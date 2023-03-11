@@ -137,12 +137,12 @@ public class RadioTest {
 
     @Test
     public void shouldIncreaseOverVolume() {
-        Radio stat = new Radio();
-        stat.setCurrentVolume(100);
-        stat.increaseVolume();
+        Radio station = new Radio();
+        station.setCurrentVolume(100);
+        station.increaseVolume();
 
-        int expected = stat.currentVolume;
-        int actual = stat.getCurrentVolume();
+        int expected = station.currentVolume;
+        int actual = station.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
     }
