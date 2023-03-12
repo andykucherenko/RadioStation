@@ -1,6 +1,14 @@
+package org.example;
+
 public class Radio {
-    public int currentRadioStation;
-    public int currentVolume;
+
+    private int maxStation = 9;
+    private int minStation = 0;
+    private int currentRadioStation = minStation;
+    private int minVolume = 0;
+    private int maxVolume = 100;
+    private int currentVolume = minVolume;
+
 
     public int getCurrentRadioStation() {
         return currentRadioStation;
